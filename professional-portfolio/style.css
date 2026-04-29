@@ -1,0 +1,139 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+
+:root {
+  --bg: #0b1220;
+  --card: #111c33;
+  --text: #e5e7eb;
+  --muted: #b0b8c5;
+  --primary: #3b82f6;
+  --accent: #22c55e;
+}
+
+
+body {
+  background: linear-gradient(180deg, #0b1220, #0f172a);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1050px;
+  margin: auto;
+  padding: 65px 0;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 110px 20px;
+  background: radial-gradient(circle at top, #1e293b, #0b1220);
+  border-bottom: 1px solid #1f2937;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: auto;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 24px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+
+h2 {
+  margin-bottom: 22px;
+  color: var(--accent);
+  font-size: 1.7rem;
+}
+
+.project-card {
+  background: var(--card);
+  padding: 20px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 1px solid #24324a;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+  transition: 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary);
+}
+
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-grid span {
+  background: #1f2a44;
+  border: 1px solid #2b3a5a;
+  padding: 9px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0b1220;
+  color: var(--text);
+}
+
+.contact textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .container {
+    padding: 45px 0;
+  }
+}
